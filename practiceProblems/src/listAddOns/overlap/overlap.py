@@ -10,6 +10,15 @@ elements that are common between the lists (without duplicates).
 
 
 def overlaps(a:list==None,b:list==None)->list:
+    """Creates a list of overlapping values
+
+    Args:
+        a (list, optional): first list to use. Defaults to =None.
+        b (list, optional): second list to use. Defaults to =None.
+
+    Returns:
+        list: overlapping values
+    """
     ol = []
     for x in a:
         if x in b and not x in ol:
