@@ -16,7 +16,7 @@ def get(numerator:int==0) -> list:
         list: The list of divisors found
     """
     l = []
-    for i in range(1,numerator):
+    for i in range(1,numerator+1):
         if numerator % i == 0:
             l.append(i)
 
